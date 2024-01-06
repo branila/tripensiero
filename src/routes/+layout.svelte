@@ -5,16 +5,22 @@
   import Footer from './Footer.svelte'
 </script>
 
-<Navbar/>
-
-<div class="inner-container">
-  <slot/>
+<div class="outer-container">
+  <Navbar/>
+  
+  <div class="inner-container">
+    <slot/>
+  </div>
+  
+  <Footer/>
 </div>
-
-<Footer/>
 
 <style>
   .inner-container {
     min-height: calc(100svh - 100px);
+  }
+
+  .outer-container {
+    padding: 0 clamp(50px, 15vw, 15vw);
   }
 </style>
