@@ -1,9 +1,6 @@
-<h1>
-  Main page content
-</h1>
+<script>
+  import Header from './Header.svelte';
+</script>
 
-<style>
-  h1 {
-    color: var(--accent);
-  }
-</style>
+<Header/>
+

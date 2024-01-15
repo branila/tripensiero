@@ -1,27 +1,43 @@
 <script lang="ts">
-  function changeLanguage(language: string) {
-    console.log(language)
-  }
+  import { onMount } from 'svelte';
+  import { language } from '$stores/language'
+
+  onMount(() => language.change(localStorage.getItem('language') || 'it'))
 </script>
 
 <div>
-  <button on:click={() => changeLanguage('it')}>
+  <button class:active={$language == 'it'} on:click={() => language.change('it')}>
     IT
   </button>
+
+  <span> | </span>
   
-  <button on:click={() => changeLanguage('en')}>
+  <button class:active={$language == 'en'} on:click={() => language.change('en')}>
     EN
   </button>
 </div>
 
 <style>
-  div {
-    width: fit-content;
-  }
-
   button {
-    background-color: var(--secondary);
+    background-color: var(--background);
     color: var(--primary);
     border: 0;
+    border-radius: 5px;
+    padding: 5px;
+    color: var(--unactive);
+    transition: 0.2s;
+    font-size: 12px;
+  }
+
+  button:hover {
+    color: var(--primary);
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+  }
+
+  .active {
+    color: var(--primary);
+    font-weight: bold;
   }
 </style>

@@ -8,7 +8,8 @@
 }
 
 :root {
-  --primary: #E0E1DD;
-  --secondary: #0D1B2A;
-  --accent: #778DA9;
+  --background: #000914;
+  --primary: #f1f1f0;
+  --unactive: #c0c0c0;
+  --accent: #8fc0ff;
 }

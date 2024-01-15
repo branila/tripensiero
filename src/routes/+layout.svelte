@@ -7,14 +7,14 @@
 
 <Navbar/>
   
-<div class="inner-container">
+<div class="container">
   <slot/>
 </div>
 
 <Footer/>
 
 <style>
-  .inner-container {
+  .container {
     min-height: calc(100svh - 100px);
   }
 </style>
