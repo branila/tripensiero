@@ -1,15 +1,18 @@
 <script>
   import { language } from '$stores/language'
+  import { fade } from 'svelte/transition'
 </script>
 
 <header>
-  <div>
-    {#if $language == 'en'}
-      In a time of universal <span>deceit</span> telling the <span>truth</span> is a revolutionary act.
-    {:else if $language == 'it'}
-      Nel tempo dell'<span>inganno</span> universale dire la <span>verità</span> è un atto rivoluzionario.
-    {/if}
-  </div>
+  {#key $language}
+    <div in:fade={{ duration: 400 }}>
+      {#if $language == 'en'}
+        In a time of universal <span>deceit</span> telling the <span>truth</span> is a revolutionary act.
+      {:else if $language == 'it'}
+        Nel tempo dell'<span>inganno</span> universale dire la <span>verità</span> è un atto rivoluzionario.
+      {/if}
+    </div>
+  {/key}
 </header>
 
 <style>
