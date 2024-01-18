@@ -1,5 +1,5 @@
 <script>
-  import { language } from '$stores/language'
+  import language from '$stores/language'
   import { fade } from 'svelte/transition'
 </script>
 

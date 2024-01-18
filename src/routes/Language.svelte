@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import { language } from '$stores/language'
+  import language from '$stores/language'
 
   onMount(() => language.change(localStorage.getItem('language') || 'it'))
 </script>

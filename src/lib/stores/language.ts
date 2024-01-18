@@ -1,6 +1,7 @@
 import { writable } from 'svelte/store'
 
 function createStore() {
+  // The default value of the store is defined at runtime in the Language.svelte component
   const { subscribe, set } = writable()
   
   return {
@@ -12,5 +13,4 @@ function createStore() {
   }
 }
 
-// The default value of the store is defined at runtime in the Language.svelte component
-export const language = createStore()
+export default createStore()
