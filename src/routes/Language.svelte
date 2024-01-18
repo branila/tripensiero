@@ -40,4 +40,9 @@
     color: var(--primary);
     font-weight: bold;
   }
+
+  div {
+    user-select: none;
+    cursor: default;
+  }
 </style>
