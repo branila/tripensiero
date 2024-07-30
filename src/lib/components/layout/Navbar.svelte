@@ -12,13 +12,12 @@
 
 <style>
   nav {
-    height: 75px;
+    height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--dark);
     color: var(--light);
-    padding: 0 clamp(25px, 15vw, 15vw);
   }
 
   nav a {
