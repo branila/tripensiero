@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-* {
-  font-family: 'Montserrat', sans-serif;
+*,
+*::before,
+*::after {
+  font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -12,4 +14,9 @@
   --primary: #f1f1f0;
   --unactive: #c0c0c0;
   --accent: #8fc0ff;
+}
+
+a {
+  text-decoration: none;
+  color: var(--accent);
 }
