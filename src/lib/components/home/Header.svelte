@@ -22,9 +22,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--background);
+    background-color: var(--dark);
   }
-  
+
   header div {
     font-size: 50px;
     font-weight: bold;

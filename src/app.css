@@ -10,10 +10,10 @@
 }
 
 :root {
-  --background: #000914;
-  --primary: #f1f1f0;
-  --unactive: #c0c0c0;
   --accent: #8fc0ff;
+  --dark: #000914;
+  --light: #f1f1f0;
+  --unactive: #c0c0c0;
 }
 
 a {

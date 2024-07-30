@@ -16,14 +16,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--background);
-    color: var(--primary);
+    background-color: var(--dark);
+    color: var(--light);
     padding: 0 clamp(25px, 15vw, 15vw);
   }
 
   nav a {
     text-decoration: none;
-    color: var(--primary);
+    color: var(--light);
     font-size: 18px;
     font-weight: bold;
   }
