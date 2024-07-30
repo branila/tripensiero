@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
+  import { onMount } from 'svelte'
   import language from '$stores/language'
 
   onMount(() => language.change(localStorage.getItem('language') || 'it'))
@@ -11,7 +11,7 @@
   </button>
 
   <span> | </span>
-  
+
   <button class:active={$language == 'en'} on:click={() => language.change('en')}>
     EN
   </button>

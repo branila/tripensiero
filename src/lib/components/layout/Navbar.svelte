@@ -1,5 +1,5 @@
 <script>
-  import Language from './Language.svelte'
+  import Language from '$components/layout/Language.svelte'
 </script>
 
 <nav>

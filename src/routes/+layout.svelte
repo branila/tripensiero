@@ -1,12 +1,12 @@
 <script>
   import '../app.css'
 
-  import Navbar from './Navbar.svelte'
-  import Footer from './Footer.svelte'
+  import Navbar from '$components/layout/Navbar.svelte'
+  import Footer from '$components/layout/Footer.svelte'
 </script>
 
 <Navbar/>
-  
+
 <div class="container">
   <slot/>
 </div>
