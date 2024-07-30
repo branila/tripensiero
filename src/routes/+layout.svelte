@@ -24,7 +24,7 @@
   }
 
   .inner-container {
-    min-height: calc(100vh - 75px);
+    min-height: calc(100svh - 100px);
   }
 
   @media (max-width: 600px) {
